@@ -1,0 +1,50 @@
+{{currentUser.username}}
+
+<div ng-if="vm.isAuthenticated() && currentUser.username">
+  <h1>Hello World, {{currentUser.username}}!</h1>
+
+  <md-content>
+    <md-card ng-repeat="photo in vm.photos" class="col-lg-2 col-sm-3 col-xs-4" style="width: 15%; margin-left: 5%; float: left;" ng-href="#/photo">
+      <a href="#/photo/{{photo.id}}">
+        <img ng-src="{{photo.images.low_resolution.url}}" class="md-card-image">
+      </a>
+    </md-card>
+  </md-content>
+
+  <md-button class="md-warn md-raised" ng-click="get()">
+    GET
+  </md-button>
+</div>
+
+<div ng-if="!vm.isAuthenticated()">
+  <h1>
+    <md-icon md-svg-icon="perm-media"></md-icon>
+    Instagram
+  </h1>
+
+  <p class="md-subhead">
+    This is a basic Instagram clone powered by <strong>Satellizer</strong>. To continue,
+    please log in with your Instagram account or create a new email account.
+  </p>
+
+  <md-button class="md-raised md-primary" ng-href="#/login">
+    Sign In
+  </md-button>
+
+  <md-button class="md-raised md-accent" ng-href="#/signup">
+    Create Account
+  </md-button>
+</div>
+
+<div ng-if="vm.isAuthenticated() && !currentUser.username">
+  <h4>Link account</h4>
+
+  <p>
+    To complete the registration process you must link your Instagram account.
+  </p>
+
+  <md-button class="md-accent md-raised" ng-click="vm.linkInstagram()">
+    Sign In with Instagram
+  </md-button>
+
+</div>

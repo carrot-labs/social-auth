@@ -1,0 +1,25 @@
+{
+  "name": "instagram",
+  "version": "0.1.0",
+  "homepage": "https://github.com/grvcoelho/labs",
+  "authors": [
+    "Guilherme Rv Coelho <guilhermervcoelho@gmail.com>"
+  ],
+  "description": "Simple Node and Angular auth",
+  "main": "browser/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "satellizer": "~0.10.1",
+    "angular": "~1.3.15",
+    "angular-ui-router": "~0.2.14",
+    "material": "Angular/material#~0.9.4",
+    "angular-material": "~0.9.4"
+  }
+}

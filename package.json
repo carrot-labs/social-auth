@@ -1,0 +1,19 @@
+{
+  "name": "instagram",
+  "version": "0.1.0",
+  "description": "Simple Node and Angular auth",
+  "main": "server/instagram.js",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server/instagram.js"
+  },
+  "author": "Guilherme Rv Coelho <guilhermervcoelho@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.1.0",
+    "jwt-simple": "^0.3.0",
+    "moment": "^2.10.3",
+    "mongoose": "^4.0.3",
+    "request": "^2.55.0"
+  }
+}

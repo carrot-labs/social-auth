@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-us" ng-app="instagram">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular Jwt</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>
+        <md-icon md-svg-icon="menu"></md-icon>
+        Hello Angular
+      </h2>
+
+      <span flex></span>
+
+      <md-button class="md-toolbar-item" ng-href="#/">
+        Home
+      </md-button>
+
+      <md-button class="md-toolbar-item" ng-href="#/login">
+        Login
+      </md-button>
+
+      <md-button class="md-toolbar-item" ng-href="#/signup">
+        Sign Up
+      </md-button>
+
+      <md-button class="md-toolbar-item" ng-href="#/logout">
+        Logout
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-content style="height: calc(100% - 64px); background: transparent">
+    <div layout="row" layout-align="center center" flex style="height: 100%">
+      <!-- <div id="contenasdt"> -->
+      <md-whiteframe class="md-whiteframe-z1" style="width: 50%; padding: 3rem; background: white;">
+        <div ui-view></div>
+      </md-whiteframe>
+      <!-- </div> -->
+    </div>
+  </md-content>
+
+  <!-- Angular Dependencies -->
+  <script src="components/angular/angular.min.js"></script>
+  <script src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="components/angular-aria/angular-aria.min.js"></script>
+  <script src="components/angular-animate/angular-animate.min.js"></script>
+  <script src="components/angular-material/angular-material.min.js"></script>
+  <script src="components/satellizer/satellizer.min.js"></script>
+
+  <!-- Angular Files -->
+  <script src="app/app.js"></script>
+  <script src="app/controllers/detail.js"></script>
+  <script src="app/controllers/home.js"></script>
+  <script src="app/controllers/signup.js"></script>
+  <script src="app/controllers/login.js"></script>
+  <script src="app/controllers/navbar.js"></script>
+  <script src="app/services/API.js"></script>
+</body>
+</html>
