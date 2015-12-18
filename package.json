@@ -5,7 +5,8 @@
   "main": "server/instagram.js",
   "private": true,
   "scripts": {
-    "start": "nodemon server/instagram.js"
+    "start": "nodemon server/instagram.js",
+    "test": "mocha test/**.js"
   },
   "author": "Guilherme Rv Coelho <guilhermervcoelho@gmail.com>",
   "license": "MIT",
